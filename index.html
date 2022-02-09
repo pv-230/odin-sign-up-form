@@ -13,5 +13,70 @@
       rel="stylesheet"
     />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="left-panel">
+        <div class="odin-banner">
+          <img src="./images/odin-lined.png" alt="Outline of Odin's head" />
+          <span class="odin-banner-text">Odin</span>
+        </div>
+        <span>
+          Photo by
+          <a href="https://unsplash.com/@haliewestphoto"> Halie West</a> on
+          <a href="https://unsplash.com/photos/25xggax4bSA"> Unsplash</a>
+        </span>
+      </div>
+      <div class="right-panel">
+        <div class="text-container">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepset dreams. Sign up
+            <em>now</em> to get started.<br /><br />
+            You <em>know</em> you want to.
+          </p>
+        </div>
+        <div class="form-container">
+          <h1>Let's do this!</h1>
+          <form action="" method="post" id="account-form">
+            <div class="form-fields">
+              <div>
+                <label for="firstname">First Name</label>
+                <input type="text" id="firstname" name="firstname" />
+              </div>
+              <div>
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="lastname" />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" />
+              </div>
+              <div>
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" />
+              </div>
+              <div>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" />
+              </div>
+              <div>
+                <label for="password-confirm">Confirm Password</label>
+                <input
+                  type="password"
+                  id="password-confirm"
+                  name="password-confirm"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="login-container">
+          <button class="create-acct-btn" type="submit" form="account-form">
+            Create Account
+          </button>
+          <span>Already have an account? <a href="">Log in</a></span>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
