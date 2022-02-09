@@ -1,7 +1,7 @@
 @font-face {
-  font-family: 'norsebold';
-  src: url('../fonts/norse-bold-webfont.woff2') format('woff2'),
-    url('../fonts/norse-bold-webfont.woff') format('woff');
+  font-family: "norsebold";
+  src: url("../fonts/norse-bold-webfont.woff2") format("woff2"),
+    url("../fonts/norse-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -12,6 +12,60 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: black;
+}
+
+.left-panel {
+  width: min(30%, 500px);
+  position: relative;
+  background-image: url("../images/background-image.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.right-panel {
+  width: min(70%, 700px);
+  background-color: whitesmoke;
+}
+
+.odin-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 20%;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.odin-banner-img {
+  margin: 10px;
+  width: max(20%, 50px);
+}
+
+.odin-banner-text {
+  color: white;
+  font-size: clamp(2rem, 5vw, 6rem);
+  font-family: "norsebold";
+}
+
+.img-credit {
+  width: 100%;
+  position: absolute;
+  bottom: 15px;
+  color: white;
+  text-align: center;
+  font-size: clamp(0.55rem, 1vw, 1rem);
+}
+
+.img-credit a {
+  color: white;
 }
