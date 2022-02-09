@@ -44,28 +44,33 @@
         </div>
 
         <div class="form-container">
-          <h1>Let's do this!</h1>
+          <span class="form-header-text">Let's do this!</span>
           <form action="" method="post" id="account-form">
             <div class="form-fields">
               <div>
                 <label for="firstname">First Name</label>
-                <input type="text" id="firstname" name="firstname" />
+                <input type="text" id="firstname" name="firstname" required />
               </div>
               <div>
                 <label for="lastname">Last Name</label>
-                <input type="text" id="lastname" name="lastname" />
+                <input type="text" id="lastname" name="lastname" required />
               </div>
               <div>
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" />
+                <input type="email" id="email" name="email" required />
               </div>
               <div>
                 <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" />
+                <input type="tel" id="phone" name="phone" required />
               </div>
               <div>
                 <label for="password">Password</label>
-                <input type="password" id="password" name="password" />
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  required
+                />
               </div>
               <div>
                 <label for="password-confirm">Confirm Password</label>
@@ -73,6 +78,7 @@
                   type="password"
                   id="password-confirm"
                   name="password-confirm"
+                  required
                 />
               </div>
             </div>
