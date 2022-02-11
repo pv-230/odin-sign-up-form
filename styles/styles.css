@@ -11,13 +11,16 @@
   --input-border-color: #e5e7eb;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
     Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 }
 
 .container {
-  box-sizing: border-box;
   display: flex;
   justify-content: center;
   min-height: 100vh;
@@ -101,8 +104,9 @@ body {
 }
 
 .form-header-text {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 500;
+  color: #363636;
   margin-bottom: 40px;
   display: block;
 }
@@ -117,8 +121,33 @@ body {
 .form-fields div {
   display: flex;
   flex-direction: column;
+  gap: 3px;
   width: 200px;
 }
+
+.form-fields label {
+  font-family: Roboto;
+  font-size: 0.6rem;
+  font-weight: 500;
+  color: #363636;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.form-fields input {
+  padding: 5px;
+  border: 1px solid var(--input-border-color);
+  border-radius: 3px;
+}
+
+.form-fields input:focus {
+  outline: 1px solid #618bff;
+  box-shadow: 3px 3px 5px lightgray;
+}
+
+/* .form-fields input:invalid {
+  outline: 1px solid #ff6161;
+} */
 
 /* Login styling */
 
